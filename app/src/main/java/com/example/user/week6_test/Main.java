@@ -1,5 +1,6 @@
 package com.example.user.week6_test;
 
+import com.example.user.week6_test.LRU.LRU;
 import com.example.user.week6_test.checkparenthesis.CheckParenthesis;
 import com.example.user.week6_test.mergesort.MergeSort;
 import com.example.user.week6_test.spiralarray.SpiralArray;
@@ -42,6 +43,10 @@ public class Main {
     }
 
     private static void lruCache() {
+        Integer[] numbers = {14, 33, 27, 10, 35, 19, 42, 9};
+        Integer size = 3;
+        LRU lru = new LRU();
+        lru.getLRU(numbers, size);
     }
 
     private static void spiralArray() {
@@ -64,9 +69,9 @@ public class Main {
         String testString2 = "[]{]}[";
         CheckParenthesis checkParenthesis = new CheckParenthesis();
         test = checkParenthesis.check(testString1);
-        System.out.println("Tested string: "+testString1+" result: "+test.toString());
+        System.out.println("Tested string: " + testString1 + " result: " + test.toString());
         test = checkParenthesis.check(testString2);
-        System.out.println("Tested string: "+testString2+" result: "+test.toString());
+        System.out.println("Tested string: " + testString2 + " result: " + test.toString());
 
     }
 
